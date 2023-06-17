@@ -32,23 +32,34 @@ main section {
   align-items: start;
 }
 
-.seccion-sobre-mi, .seccion-porfolio, .seccion-skills, .seccion-contactame {
+.seccion-sobre-mi,
+.seccion-porfolio,
+.seccion-skills,
+.seccion-contactame {
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 0 10% 0 10%;
   gap: 3rem;
-  margin-bottom: 10vw;
 }
-.seccion-sobre-mi h2, .seccion-porfolio h2, .seccion-skills h2, .seccion-contactame h2 {
+.seccion-sobre-mi h2,
+.seccion-porfolio h2,
+.seccion-skills h2,
+.seccion-contactame h2 {
   color: #DDE6ED;
   font-size: 3rem;
   font-weight: 700;
 }
-.seccion-sobre-mi p, .seccion-porfolio p, .seccion-skills p, .seccion-contactame p {
+.seccion-sobre-mi p,
+.seccion-porfolio p,
+.seccion-skills p,
+.seccion-contactame p {
   font-size: 1.5rem;
 }
-.seccion-sobre-mi div p, .seccion-porfolio div p, .seccion-skills div p, .seccion-contactame div p {
+.seccion-sobre-mi div p,
+.seccion-porfolio div p,
+.seccion-skills div p,
+.seccion-contactame div p {
   font-size: 1rem;
 }
 
@@ -93,6 +104,13 @@ button:active {
   cursor: pointer;
 }
 
+/*Ajuste de la seccion porfolio*/
+@media (max-width: 768px) {
+  .seccion-porfolio {
+    height: auto;
+  }
+}
+/*Estructura body y nav w>992px*/
 @media (min-width: 992px) {
   body {
     display: flex;

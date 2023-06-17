@@ -39,13 +39,16 @@ main section {
     }
 }
 
-.seccion-sobre-mi, .seccion-porfolio, .seccion-skills, .seccion-contactame {
+.seccion-sobre-mi,
+.seccion-porfolio,
+.seccion-skills,
+.seccion-contactame {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0 10% 0 10%;
     gap: 3rem;
-    margin-bottom: 10vw;
+
     & h2 {
         color: $quaternary-color;
         font-size: 3rem;
@@ -56,24 +59,26 @@ main section {
         font-size: 1.5rem;
     }
 
-    & div p{
+    & div p {
         font-size: 1rem;
     }
 
 }
 
-i{
+
+i {
     color: $white;
+
     &:hover {
         color: $tertiary-color;
         cursor: pointer;
     }
 }
 
-
-.card{
+.card {
     background-color: $secondary-color;
 }
+
 button {
     width: 14rem;
     padding: .8rem;
@@ -97,13 +102,21 @@ button:active {
     color: $white;
     padding: 1rem;
     border-radius: 50px;
+
     &:hover {
         color: $tertiary-color;
         cursor: pointer;
     }
 }
 
+/*Ajuste de la seccion porfolio*/
+@media (max-width:768px){
+    .seccion-porfolio {
+        height: auto;
+    }
+}
 
+/*Estructura body y nav w>992px*/
 @media (min-width:992px) {
     body {
         display: flex;
