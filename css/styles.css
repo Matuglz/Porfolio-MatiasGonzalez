@@ -1,0 +1,131 @@
+* ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: #27374D;
+  color: rgb(228, 217, 217);
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+}
+
+main section {
+  height: 100vh;
+}
+
+.seccion-principal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10% 0 10%;
+  margin-bottom: 4rem;
+}
+.seccion-principal h1 {
+  color: #DDE6ED;
+  font-size: 5rem;
+  font-weight: 700;
+}
+.seccion-principal h1 span {
+  color: #9DB2BF;
+}
+.seccion-principal p {
+  align-items: start;
+}
+
+.seccion-sobre-mi, .seccion-porfolio, .seccion-skills, .seccion-contactame {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10% 0 10%;
+  gap: 3rem;
+  margin-bottom: 10vw;
+}
+.seccion-sobre-mi h2, .seccion-porfolio h2, .seccion-skills h2, .seccion-contactame h2 {
+  color: #DDE6ED;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.seccion-sobre-mi p, .seccion-porfolio p, .seccion-skills p, .seccion-contactame p {
+  font-size: 1.5rem;
+}
+.seccion-sobre-mi div p, .seccion-porfolio div p, .seccion-skills div p, .seccion-contactame div p {
+  font-size: 1rem;
+}
+
+i {
+  color: rgb(228, 217, 217);
+}
+i:hover {
+  color: #9DB2BF;
+  cursor: pointer;
+}
+
+.card {
+  background-color: #526D82;
+}
+
+button {
+  width: 14rem;
+  padding: 0.8rem;
+  background-color: #526D82;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 3px 5px 0.52px rgba(0, 0, 0, 0.75);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.social-icons-div {
+  display: flex;
+  gap: 2rem;
+}
+
+.social-icons-div a i {
+  background-color: #526D82;
+  color: rgb(228, 217, 217);
+  padding: 1rem;
+  border-radius: 50px;
+}
+.social-icons-div a i:hover {
+  color: #9DB2BF;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  body {
+    display: flex;
+  }
+  header {
+    background-color: #526D82;
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+  }
+  main {
+    margin-left: 20%;
+    width: 70%;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .nav-item {
+    border: 0;
+    color: var(--clr-white);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .nav-link:hover {
+    color: rgb(228, 217, 217);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
