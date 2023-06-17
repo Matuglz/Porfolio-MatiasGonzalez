@@ -21,7 +21,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid flex-lg-column">
+            <div class="container flex-lg-column">
                 <a class="navbar-brand d-lg-none" href="#matias">Matias Gonzalez</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,8 +57,9 @@
                     alt="Typing SVG" /></p>
             <p class="mb-3 fs-4">Bienvenido a mi portfolio como desarrollador web</p>
             <p class="fs-6">Si queres contactarte conmigo escribime a <a
-                    href="mailto:MatiasNahuelGonzalez01@gmail.com">MatiasNahuelGonzalez01@gmail.com</a></p>
-            <button class="m-2">Descarga mi CV</button>
+                    href="mailto:MatiasNahuelGonzalez01@gmail.com">MatiasNahuelGonzalez01<span
+                        class="d-none d-sm-inline">@gmail.com</span></a></p>
+            <button class="m-2 text-color"><a href="./docs/cv.pdf" download="Curriculum Matias Gonzalez">Descarga mi CV</a></button>
             <div class="mt-4 social-icons-div">
                 <a href="https://www.linkedin.com/in/matias-gonzalez-8046711b4/" target="_blank"><i
                         class="fs-2 fa-brands fa-linkedin-in"></i></a>
@@ -75,16 +76,17 @@
                 laboral como maquetador web
             </p>
             <div>
-            <p>Si queres contactarte conmigo escribime a <a
-                    href="mailto:MatiasNahuelGonzalez01@gmail.com">MatiasNahuelGonzalez01@gmail.com</a></p>
-            <p>Mi experiencia laboral completa en <a href="https://www.linkedin.com/in/matias-gonzalez-8046711b4/"
-                    target="_blank">In/MatiasGonzalez</a></p>
-                </div>
+                <p>Si queres contactarte conmigo escribime a <a
+                        href="mailto:MatiasNahuelGonzalez01@gmail.com">MatiasNahuelGonzalez01<span
+                            class="d-none d-sm-inline">@gmail.com</span></a></p>
+                <p>Mi experiencia laboral completa en <a href="https://www.linkedin.com/in/matias-gonzalez-8046711b4/"
+                        target="_blank">In/MatiasGonzalez</a></p>
+            </div>
         </section>
 
         <!--Seccion porfolio-->
         <section class="seccion-porfolio container" id="porfolio">
-            <h2 class="text-start">Porfolio</h2>
+            <h2 class="text-start">PROYECTOS</h2>
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
                     <div class="card h-100">
@@ -100,11 +102,15 @@
                                     alt="CSS logo">
                                 <img src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"
                                     alt="bootstrap logo">
+                                    <img src="https://img.shields.io/badge/sass-%23ad03fc?logo=sass&logoColor=%23fc0388
+                                    " alt="">
                             </p>
                         </div>
                         <div class="card-footer">
-                            <a href="https://github.com/Matuglz/proyecto-web" target="_blank"><i class="fs-2 fa-brands fa-github"></i></a>
-                            <a href="https://proyecto-web-phi.vercel.app/" target="_blank"><i class="fs-2 fa-solid fa-link"></i></a>
+                            <a href="https://github.com/Matuglz/proyecto-web" target="_blank"><i
+                                    class="fs-2 fa-brands fa-github"></i></a>
+                            <a href="https://proyecto-web-phi.vercel.app/" target="_blank"><i
+                                    class="fs-2 fa-solid fa-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -113,7 +119,7 @@
                         <img src="./img/frontend.png" class="card-img-top" alt="Front end mentor proyecto">
                         <div class="card-body">
                             <h3 class="card-title">Landing page</h3>
-                            <p class="card-text">Proyecto responsive de FrontEnd mentor, landing page resposive</p>
+                            <p class="card-text">Proyecto responsive de FrontEnd mentor</p>
                             <p class="text-center"><img
                                     src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
                                     alt="HTML logo">
@@ -132,7 +138,7 @@
 
         <!--Seccion skills-->
         <section class="seccion-skills" id="skills">
-            <h2>Skills</h2>
+            <h2>SKILLS</h2>
             <div>
                 <h3>LENGUAJES DE PROGRAMACIÓN</h3>
                 <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
@@ -161,12 +167,11 @@
         <!--Seccion contacto-->
         <section class="seccion-contactame" id="contacto">
             <h2>CONTÁCTAME!</h2>
-            <ul>
-                <li>Email <a href="mailto:MatiasNahuelGonzalez01@gmail.com">MatiasNahuelGonzalez01@gmail.com</a></li>
-                <li>Whatsapp <a href="">+54 1151580062</a> </li>
-                <li>LinkedIn <a href="https://www.linkedin.com/in/matias-gonzalez-8046711b4/"
-                        target="_blank">in/MatiasGonzalez</a></li>
-            </ul>
+            <p><i class="fa-sharp fa-regular fa-envelope"></i> Email <a href="mailto:MatiasNahuelGonzalez01@gmail.com">MatiasNahuelGonzalez01<span
+                        class="d-none d-sm-inline">@gmail.com</span></a></p>
+            <p><i class="fa-brands fa-whatsapp"></i> Whatsapp <a href="">+54 1151580062</a> </p>
+            <p><i class="fa-brands fa-linkedin-in"></i> LinkedIn <a href="https://www.linkedin.com/in/matias-gonzalez-8046711b4/"
+                    target="_blank">in/MatiasGonzalez</a></p>
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

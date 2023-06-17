@@ -9,8 +9,20 @@ body {
   font-weight: 400;
 }
 
+a {
+  text-decoration: none;
+}
+
 main section {
-  height: 100vh;
+  height: auto;
+}
+
+.navbar-brand {
+  font-size: 1.5Srem;
+}
+
+.navbar-toggler {
+  width: 4rem;
 }
 
 .seccion-principal {
@@ -22,7 +34,7 @@ main section {
 }
 .seccion-principal h1 {
   color: #DDE6ED;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 .seccion-principal h1 span {
@@ -30,6 +42,9 @@ main section {
 }
 .seccion-principal p {
   align-items: start;
+}
+.seccion-principal p img {
+  width: 100%;
 }
 
 .seccion-sobre-mi,
@@ -83,6 +98,9 @@ button {
   border-radius: 15px;
   box-shadow: 1px 3px 5px 0.52px rgba(0, 0, 0, 0.75);
 }
+button a {
+  color: rgb(228, 217, 217);
+}
 
 button:active {
   transform: translateY(2px);
@@ -106,8 +124,12 @@ button:active {
 
 /*Ajuste del contededor de porfolio*/
 @media (max-width: 768px) {
-  .seccion-porfolio {
+  .seccion-porfolio,
+  .seccion-skills {
     height: auto;
+  }
+  .seccion-contactame h2 {
+    font-size: 2rem;
   }
 }
 /*Estructura body y nav w>992px*/
@@ -122,6 +144,7 @@ button:active {
     position: fixed;
     display: flex;
     align-items: center;
+    box-shadow: 23px 0px 12px 10px rgb(82, 109, 130);
   }
   main {
     margin-left: 20%;
@@ -143,6 +166,18 @@ button:active {
   }
   .nav-link:hover {
     color: rgb(228, 217, 217);
+  }
+  .seccion-principal {
+    height: 100vh;
+  }
+  .seccion-principal h1 {
+    font-size: 5rem;
+  }
+  .seccion-sobre-mi,
+  .seccion-porfolio,
+  .seccion-skills,
+  .seccion-contactame {
+    height: 100vh;
   }
   .seccion-sobre-mi p,
   .seccion-porfolio p,
