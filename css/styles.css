@@ -54,7 +54,7 @@ main section {
 .seccion-porfolio p,
 .seccion-skills p,
 .seccion-contactame p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .seccion-sobre-mi div p,
 .seccion-porfolio div p,
@@ -104,7 +104,7 @@ button:active {
   cursor: pointer;
 }
 
-/*Ajuste de la seccion porfolio*/
+/*Ajuste del contededor de porfolio*/
 @media (max-width: 768px) {
   .seccion-porfolio {
     height: auto;
@@ -143,6 +143,12 @@ button:active {
   }
   .nav-link:hover {
     color: rgb(228, 217, 217);
+  }
+  .seccion-sobre-mi p,
+  .seccion-porfolio p,
+  .seccion-skills p,
+  .seccion-contactame p {
+    font-size: 1.5rem;
   }
 }
 
